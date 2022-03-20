@@ -1,0 +1,115 @@
+:root{
+    --primary-color:#f9fddb;
+    --secondary-color: #cfa9a9;
+    --third-color: #bcf18b;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    padding:20px;
+    background-color: var(--secondary-color);
+}
+
+header h1{
+    display: inline-block;
+    font-size: 50px;
+    color:#bcf18b;
+}
+
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float:right;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display:inline-block;
+    margin-left: 25px;
+}
+
+ .hero{
+    background-color: #bcf18b; 
+    min-height: 20vh;
+    color:aliceblue;
+    text-align:right
+}
+.hero h2{
+    padding: 30px;
+}
+
+/* styling section in main */
+ main{ 
+    max-width: 70%;
+}
+
+.section{
+    display:flex;
+    justify-content: space-between;
+}
+
+.section h2{
+    padding: 10px 25px ;
+    border-right: 3px solid #bcf18b;
+}
+.section div{
+    margin-left: 10px;
+    flex:70%;
+} 
+
+.section .flex-container a {
+    background-color: rebeccapurple;
+}
+
+#surf-report,
+#led-wall,
+#calculator,
+#pastel-pretzel,
+#run-buddy{
+    background-color: white; 
+}
+
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+
+.flex-item{
+    border:3px solid black;
+    background-color: red;
+    min-height: 125px;
+    min-width: 130px;
+}
+
+.flex-item:first-child{
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+.flex-item{
+    min-height: 150px;
+    flex-basis:40%;
+    margin-bottom: 25px;
+}
