@@ -66,6 +66,8 @@ header nav ul li{
 .section{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 .section h2{
@@ -104,12 +106,64 @@ header nav ul li{
 }
 
 .flex-item:first-child{
-    min-height: 300px;
+    min-height: 200px;
     flex-basis: 100%;
+}
+
+#surf-report{
+    background-image: url("../images/ocean.jpg");
+    background-size: contain;
+    color:white;
+}
+#surf-report:hover{
+    filter: brightness(70%);
+}
+#led-wall{
+    background-image: url("../images/blocks.jpg");
+    background-size: contain;
+    color:white
+}
+#led-wall:hover{
+    filter: brightness(70%);
+}
+#calculator{
+    background-image: url("../images/Bnumbers.jpg");
+    background-size:contain;
+    color:white;
+}
+#calculator:hover{
+    filter: brightness(70%);
+}
+#pastel{
+    background-image: url("../images/waltD.webp");
+    background-size:contain;
+    color:white;
+}
+#pastel:hover{
+    filter:brightness(70%)
+}
+#run-buddy{
+    background-image: url("../images/gym.jpeg");
+    background-size: contain;
+    color:white
+}
+#run-buddy:hover{
+    filter:brightness(70%)
 }
 
 .flex-item{
     min-height: 150px;
     flex-basis:40%;
     margin-bottom: 25px;
+}
+
+
+.section div ul {
+    display: flex;
+    float: right;
+    list-style: none;
+}
+.section div ul li{
+    margin: 25px;
+
 }
